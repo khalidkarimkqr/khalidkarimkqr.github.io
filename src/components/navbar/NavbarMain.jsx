@@ -1,7 +1,9 @@
+import React from "react";
+
 import NavbarLogo from "./NavbarLogo";
-import NavbarLinks from "./NavbarLinks";
+import NavbarLinks from "./NavBarLinks";
 import NavbarBtn from "./NavbarBtn";
-import NavbarToggler from "./NavbarToggler";
+// import NavbarToggler from "./NavbarToggler";
 
 const NavbarMain = () => {
   return (
@@ -10,7 +12,6 @@ const NavbarMain = () => {
         <NavbarLogo />
         <NavbarLinks />
         <NavbarBtn />
-        <NavbarToggler />
       </div>
     </nav>
   );
