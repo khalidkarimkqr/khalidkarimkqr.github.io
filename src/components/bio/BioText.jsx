@@ -10,7 +10,9 @@ const BioText = () => {
         Khalid Karim
       </h1>
       <p className="text-lg mt-4 text-white">
-        Hi, I’m Khalid Karim, an aspiring software developer with a passion
+        A passionate Software Engineer and Student <br /> with 3 years of
+        experience.
+        {/* Hi, I’m Khalid Karim, an aspiring software developer with a passion
         <br /> for building innovative solutions through technology. I have
         hands-on <br /> experience in web development and machine learning
         projects, and I possess <br /> a solid understanding of how the web
@@ -20,7 +22,7 @@ const BioText = () => {
         complex challenges. I’m always eager to collaborate with other
         developers, <br /> contribute to meaningful projects, and learn from the
         vibrant tech <br />
-        community.
+        community. */}
       </p>
     </div>
   );
