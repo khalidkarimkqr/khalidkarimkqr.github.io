@@ -10,7 +10,7 @@ const BioText = () => {
         Khalid Karim
       </h1>
       <p className="text-lg mt-4 text-white">
-        A passionate Software Engineer and Student <br /> with 3 years of
+        A passionate Software Developer and Student <br /> with 3 years of
         experience.
         {/* Hi, I’m Khalid Karim, an aspiring software developer with a passion
         <br /> for building innovative solutions through technology. I have
