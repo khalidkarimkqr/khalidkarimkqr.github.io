@@ -4,6 +4,7 @@ import BioGradient from "./components/bio/BioGradient";
 import SubBioSection from "./components/bio/SubBioSection";
 import SkillsMain from "./components/skillsSection/SkillsMain";
 import HelperSection from "./components/HelperSection";
+import SubSkills from "./components/skillsSection/SubSkills";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <BioGradient />
       <SubBioSection />
       <SkillsMain />
+      <SubSkills />
       <HelperSection />
     </main>
   );
