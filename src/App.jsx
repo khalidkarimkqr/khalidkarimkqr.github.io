@@ -16,8 +16,9 @@ function App() {
       <SubBioSection />
       <SkillsMain />
       <SubSkills />
-      <HelperSection />
       <ExperienceMain />
+      <ProjectsMain />
+      <HelperSection />
     </main>
   );
 }
