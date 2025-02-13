@@ -7,7 +7,7 @@ const SkillsText = () => {
       <p className="text-lg text-center text-white">
         I not only work with these technologies but excellent in using them with
         best practices to deliver high-quality results, I have been working with
-        all these skills to build my portfolio projects
+        all these skills and libraries to build my portfolio projects
       </p>
     </div>
   );
