@@ -6,7 +6,7 @@ const BioPic = () => {
   return (
     <div className="h-full flex items-center justify-center">
       <img
-        src="../../public/images/HexaPic.png"
+        src="../../images/HexaPic.png"
         alt="Khalid karim"
         className="max-h-[450px] w-auto"
       />
