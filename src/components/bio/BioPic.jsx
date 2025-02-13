@@ -2,8 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
-import { PiHexagonThin } from "react-icons/pi";
-
 const BioPic = () => {
   return (
     <motion.div
@@ -14,13 +12,10 @@ const BioPic = () => {
       className="h-full flex items-center justify-center"
     >
       <img
-        src="../../images/HexaPic.png"
+        src="../../images/yeee.webp"
         alt="Khalid karim"
-        className="max-h-[450px] w-auto"
+        className="max-h-[320px] w-auto"
       />
-      {/* <div className="absolute -z-10 flex justify-center items-center animate-pulse">
-        <PiHexagonThin className=" md:h-[100%] sm:h-[100%] min-h-[600px] w-auto text-orange opacity-70  animate-[spin_20s_linear_infinite] " />
-      </div> */}
     </motion.div>
   );
 };

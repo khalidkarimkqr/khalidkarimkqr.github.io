@@ -9,6 +9,7 @@ import ExperienceMain from "./components/experience/ExperienceMain";
 import ProjectsMain from "./components/projects/ProjectsMain";
 import ContactMeMain from "./components/contactMe/ContactMeMain";
 import FooterMain from "./components/footer/FooterMain";
+import AboutMeMain from "./components/aboutMe2/AboutMeMain";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <BioMain />
       <BioGradient />
       <SubBioSection />
+      <AboutMeMain />
       <SkillsMain />
       <SubSkills />
       <ExperienceMain />
