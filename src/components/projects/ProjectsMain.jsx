@@ -17,7 +17,7 @@ const projects = [
     year: "Oct 2024",
     align: "left",
     image: "../../images/website-img-2.webp",
-    link: "#",
+    link: "https://github.com/khalidkarimkqr/Photon-Dash",
   },
   {
     name: "RecipeHub",

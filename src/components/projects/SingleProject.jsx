@@ -47,7 +47,11 @@ const SingleProject = ({ name, year, align, image, link }) => {
       </div>
       <div className="max-h-[220px] max-w-[400px] rounded-xl overflow-hidden hover:scale-110 transform transition-all duration-500 ralative border border-white">
         <div className="w-full h-full bg-cyan opacity-50 absolute top-0 left-0 hover:opacity-0 transition-all duration-500 md:block sm:hidden"></div>
-        <img src={image} alt="website image" className="w-full h-full" />
+        <img
+          src={image}
+          alt="Screenshot of the website app"
+          className="w-full h-full"
+        />
       </div>
     </motion.div>
   );

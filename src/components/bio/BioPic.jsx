@@ -13,7 +13,7 @@ const BioPic = () => {
     >
       <img
         src="../../images/yeee.webp"
-        alt="Khalid karim"
+        alt="Picture of Khalid, a software developer, coding on his laptop "
         className="max-h-[320px] w-auto"
       />
     </motion.div>
