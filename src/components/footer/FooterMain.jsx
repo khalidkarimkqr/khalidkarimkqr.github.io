@@ -29,7 +29,9 @@ const FooterMain = () => {
           })}
         </ul>
       </div>
-      <p></p>
+      <p className="max-w-[1200px] mx-auto text-right mt-2 mb-12 text-sm text-lightBrown">
+        © 2024 Khalid Karim | All Rights Reserved.
+      </p>
     </div>
   );
 };
