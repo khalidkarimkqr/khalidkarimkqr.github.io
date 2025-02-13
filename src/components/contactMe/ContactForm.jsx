@@ -1,8 +1,23 @@
 import React from "react";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
 const ContactForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [success, setSuccess] = useState("");
+
+  const handleName = (e) => {
+    setName(e.target.value);
+  };
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  };
+  const handleMessage = (e) => {
+    setMessage(e.target.value);
+  };
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -14,7 +29,10 @@ const ContactForm = () => {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          setEmail("");
+          setName("");
+          setMessage("");
+          setSuccess("Message Sent Succesfully");
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -24,13 +42,20 @@ const ContactForm = () => {
 
   return (
     <div>
-      <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
+      <p className="text-cyan">{success}</p>
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="flex flex-col gap-4 text-white"
+      >
         <input
           type="text"
           name="from_name"
           placeholder="Your Name"
           required
           className="h-12 rounded-lg bg-lightBrown px-2"
+          value={name}
+          onChange={handleName}
         />
         <input
           type="email"
@@ -38,6 +63,8 @@ const ContactForm = () => {
           placeholder="Your Email"
           required
           className="h-12 rounded-lg bg-lightBrown px-2"
+          value={email}
+          onChange={handleEmail}
         />
         <textarea
           type="text"
@@ -47,6 +74,8 @@ const ContactForm = () => {
           placeholder="Message"
           required
           className=" rounded-lg bg-lightBrown p-2"
+          value={message}
+          onChange={handleMessage}
         />
         <button
           type="submit"
