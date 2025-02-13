@@ -5,6 +5,7 @@ import SubBioSection from "./components/bio/SubBioSection";
 import SkillsMain from "./components/skillsSection/SkillsMain";
 import HelperSection from "./components/HelperSection";
 import SubSkills from "./components/skillsSection/SubSkills";
+import ExperienceMain from "./components/experience/ExperienceMain";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <SkillsMain />
       <SubSkills />
       <HelperSection />
+      <ExperienceMain />
     </main>
   );
 }
