@@ -16,18 +16,18 @@ const FooterMain = () => {
       <div className="md:flex justify-between mt-4 max-w-[1200px] mx-auto sm:hidden">
         <p className="text-3xl text-lightGrey ">Khalid Karim</p>
         <ul className="flex gap-4 text-lightGrey text-xl">
-          {links.map((item, index) => {
+          {links.map((link, index) => {
             return (
               <li key={index}>
                 <Link
-                  to={item.section}
+                  to={link.section}
                   spy={true}
                   smooth={true}
                   duration={500}
                   offset={-130}
                   className="hover:text-white transition-all duration-500 cursor-pointer"
                 >
-                  {item.link}
+                  {link.link}
                 </Link>
               </li>
             );
