@@ -6,6 +6,7 @@ import SkillsMain from "./components/skillsSection/SkillsMain";
 import HelperSection from "./components/HelperSection";
 import SubSkills from "./components/skillsSection/SubSkills";
 import ExperienceMain from "./components/experience/ExperienceMain";
+import ProjectsMain from "./components/projects/ProjectsMain";
 
 function App() {
   return (
