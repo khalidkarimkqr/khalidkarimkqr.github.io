@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const links = [
   { link: "About Me", section: "about" },
@@ -15,15 +16,19 @@ const FooterMain = () => {
       <div className="md:flex justify-between mt-4 max-w-[1200px] mx-auto sm:hidden">
         <p className="text-3xl text-lightGrey ">Khalid Karim</p>
         <ul className="flex gap-4 text-lightGrey text-xl">
-          {links.map((item, index) => {
+          {links.map((link, index) => {
             return (
               <li key={index}>
-                <a
-                  href="#"
+                <Link
+                  to={link.section}
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-130}
                   className="hover:text-white transition-all duration-500 cursor-pointer"
                 >
-                  {item.link}
-                </a>
+                  {link.link}
+                </Link>
               </li>
             );
           })}
