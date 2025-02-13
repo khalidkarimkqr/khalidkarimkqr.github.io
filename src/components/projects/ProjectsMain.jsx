@@ -22,7 +22,7 @@ const projects = [
     year: "Dec2023",
     align: "right",
     image: "../../images/recipehub_ss.png",
-    link: "#https://recipehub-khalidkarimkqr.netlify.app/",
+    link: "https://recipehub-khalidkarimkqr.netlify.app/",
   },
   {
     name: "Heart Disease Classification",
@@ -46,6 +46,7 @@ const ProjectsMain = () => {
               year={project.year}
               align={project.align}
               image={project.image}
+              link={project.link}
             />
           );
         })}
