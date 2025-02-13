@@ -31,7 +31,8 @@ const BioText = () => {
         viewport={{ once: false, amount: 0 }}
         className="text-lg mt-4 text-white"
       >
-        A passionate Software Developer and Student with 3 years of experience
+        A passionate Software Developer and Student with <br /> 3 years of
+        experience.
       </motion.p>
     </div>
   );
