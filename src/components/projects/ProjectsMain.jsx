@@ -5,28 +5,28 @@ import SingleProject from "./SingleProject";
 const projects = [
   {
     name: "Bull Dozer Price Prediction",
-    year: "Mar2023",
+    year: "Mar 2023",
     align: "right",
     image: "../../images/website-img-1.jpg",
     link: "#",
   },
   {
     name: "Photon Dash",
-    year: "Oct2024",
+    year: "Oct 2024",
     align: "left",
     image: "../../images/website-img-2.webp",
     link: "#",
   },
   {
     name: "RecipeHub",
-    year: "Dec2023",
+    year: "Dec 2023",
     align: "right",
     image: "../../images/recipehub_ss.png",
     link: "https://recipehub-khalidkarimkqr.netlify.app/",
   },
   {
     name: "Heart Disease Classification",
-    year: "May2024",
+    year: "May 2024",
     align: "left",
     image: "../../images/website-img-4.jpg",
     link: "#",

@@ -18,12 +18,24 @@ const SingleProject = ({ name, year, align, image, link }) => {
           {year}
         </h2>
         <a
-          href={link}
-          className={`text-lg flex gap-2 items-center text-cyan hover:text-orange transition-all duration-500 cursor-pointer sm:justify-self-center ${
+          href={link !== "#" ? link : undefined} // Disable link if it's "#"
+          target={link !== "#" ? "_blank" : undefined} // Open in new tab only if valid link
+          rel={link !== "#" ? "noopener noreferrer" : undefined} // Add security attributes
+          className={`text-lg flex gap-2 items-center text-white ${
+            link !== "#"
+              ? "text-cyan hover:text-orange cursor-pointer"
+              : "text-gray-500 cursor-not-allowed"
+          } transition-all duration-500 ${
             align === "left" ? "md:justify-self-end" : "md:justify-self-start"
           }`}
         >
-          View <BsFillArrowUpRightCircleFill />
+          {link !== "#" ? (
+            <>
+              View <BsFillArrowUpRightCircleFill />
+            </>
+          ) : (
+            "Coming Soon"
+          )}
         </a>
       </div>
       <div className="max-h-[220px] max-w-[400px] rounded-xl overflow-hidden hover:scale-110 transform transition-all duration-500 ralative border border-white">
