@@ -52,7 +52,7 @@ const AllSkills = () => {
       <div className="flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto">
         {skills.map((item, index) => {
           return (
-            <SingleSkill key={index} text={item.next} imgSvg={<item.icon />} />
+            <SingleSkill key={index} text={item.skill} imgSvg={<item.icon />} />
           );
         })}
       </div>
